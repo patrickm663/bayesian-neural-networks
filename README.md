@@ -19,6 +19,10 @@ $$\log\left( m\left( x, t, g \right) \right) = \left( \frac{x - \mu_{x}}{\sigma_
 
 $x$ and $t$ are scaled, based on the training set. The above equation can be simplified as needed and constant terms expressed as parameters one can re-fit and investigate to see if any learnt 'laws of mortality' emerge.
 
+Below are initial comparisons of a deep neural net (red) against repeated samples from a smaller BNN (green). The data reflects unseen test data (training/test split is done based on calendar years):
+
+![image](https://github.com/patrickm663/thesis/assets/77886027/094db806-de6f-458d-8346-cdeee4225c2b)
+
 # Further Work
 
 - The above is subject to change as the neural network re-evaulated and the method is extended to the BNN results.
