@@ -1,4 +1,4 @@
-# Thesis
+# Bayesian Neural Networks
 
 This repo is a work in progress and explores the applications of Bayesian Neural Networks (BNNs) for actuarial mortality modelling.
 
@@ -28,3 +28,7 @@ Below are initial comparisons of a deep neural net (red) against repeated sample
 - The above is subject to change as the neural network re-evaulated and the method is extended to the BNN results.
 - Further exploratory work will be added to compare traditional methods (e.g. Lee-Carter) and BNN extensions to tradtional methods.
 - These approaches will also be stress-tested over different mortality datasets (Ireland is being used at the moment).
+
+# Data
+
+The data is Irish mortality data from 1950-2020, sourced from https://mortality.org.
