@@ -15,11 +15,11 @@ Symbolic regression is explored in Case #1 to illustrate some analytical approxi
 
 Here is an example of a discovered equation from the neural network for the log of the central mortality rate ($x$ is age, $t$ is time period (measured from $t=0=1950$), and $g$ is an indicator variable for gender ($g=1$ means Male)):
 
-$$\log\left( m\left( x, t, g \right) \right) = \left( \frac{x - \mu_{x}}{\sigma_{x}} - \left( \frac{\frac{t - \mu_{t}}{\sigma_{t}}}{0.18350607} - \left( 0.075287916^{\frac{x - \mu_{x}}{\sigma_{x}}} + \frac{g}{0.075287916} \right) \right) \cdot 0.013670013 \right) \cdot 2.9507854 -5.799911$$
+$$\log\big( m\left( x, t, g \right) \big) = \left( \frac{x - \mu_{x}}{\sigma_{x}} - \left( \frac{\frac{t - \mu_{t}}{\sigma_{t}}}{0.18350607} - \left( 0.075287916^{\frac{x - \mu_{x}}{\sigma_{x}}} + \frac{g}{0.075287916} \right) \right) \cdot 0.013670013 \right) \cdot 2.9507854 -5.799911$$
 
 $x$ and $t$ are scaled, based on the training set. The above equation can be simplified as needed and constant terms expressed as parameters one can re-fit and investigate to see if any learnt 'laws of mortality' emerge.
 
-$$\log\left( m\left( x, t, g \right) \right) = A + B\cdot x - c\cdot t + D\cdot F^x + G\cdot g$$
+$$\log\big( m\left( x, t, g \right) \big) = A + B\cdot x - c\cdot t + D\cdot F^x + G\cdot g$$
 
 Below are initial comparisons of a deep neural net (red) against repeated samples from a smaller BNN (green). The data reflects unseen test data (training/test split is done based on calendar years):
 
