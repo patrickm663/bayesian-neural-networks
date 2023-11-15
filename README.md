@@ -34,13 +34,13 @@ Refitting the equation above using MCMC provides a reasonable, smooth equation f
 
 ![sym_plot](https://github.com/patrickm663/bayesian-neural-networks/assets/77886027/a6d888c2-c07d-43e5-b35b-befaff61043e)
 
+The equation can be roughly expressed as:
+
+$$\log\big( m\left( x, t, g \right) \big) = -9.29 + 0.09\cdot x - 0.02\cdot t + 4.5\cdot 0.66^x + 0.54\cdot g$$
+
 Convergance is fairly reasonable after applying NUTS for 5 000 samples, all taking Normal priors:
 
 ![sym_samples_2](https://github.com/patrickm663/bayesian-neural-networks/assets/77886027/a67f3847-d6fb-4ef2-8d78-e552efaec2ff)
-
-This means the equation can be roughly expressed as:
-
-$$\log\big( m\left( x, t, g \right) \big) = -9.29 + 0.09\cdot x - 0.02\cdot t + 4.5\cdot 0.66^x + 0.54\cdot g$$
 
 ## Bayesian Neural Networks to Enhance Existing Mortality Equations
 
