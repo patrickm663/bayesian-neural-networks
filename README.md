@@ -38,6 +38,12 @@ The equation can be roughly expressed as:
 
 $$\log\big( m\left( x, t, g \right) \big) = -9.29 + 0.09\cdot x - 0.02\cdot t + 4.5\cdot 0.66^x + 0.54\cdot g$$
 
+Taking it one further and performing some numerical integration, we can calculate life expectancies based off of our derived equation:
+
+![life_exp](https://github.com/patrickm663/bayesian-neural-networks/assets/77886027/9441749a-e633-4d5f-8eef-b891f23932d7)
+
+_Further work is planned to have the MCMC smaples flow through the integrations steps to produce an uncertainty band over the above life expectancies._
+
 Convergance is fairly reasonable after applying NUTS for 5 000 samples, all taking Normal priors:
 
 ![sym_samples_2](https://github.com/patrickm663/bayesian-neural-networks/assets/77886027/a67f3847-d6fb-4ef2-8d78-e552efaec2ff)
